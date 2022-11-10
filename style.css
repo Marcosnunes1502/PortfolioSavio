@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #2a2a2a;
+  --second-bg-color: #202020;
+  --text-color: #ffffff;
+  --second-text-color: #FF4D00;
+  --main-color: #ff4d05;
+  --big-font: 5rem;
+  --h2-font: 3rem;
+  --p-font:1.1rem;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  padding: 15px 3%;
+  border-bottom: 1px solid transparent;
+  transition: all .45s ease;
+  opacity: 0.8;
+}
+
+#home {
+  background-image: url("./img/background-inicio.png");
+  width: 100%;
+  height: 100vh;
+}
+
+.navlist{
+  display: flex;
+}
+
+.navlist a{
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 30px;
+  transition: all .45s ease;
+}
+
+.navlist a:hover {
+  color: var(--second-text-color);
+}
+
+.navlist a.active {
+  color: var(--second-text-color);
+}
+
+.social-network{
+  display: flex;
+}
+
+.social-network img{
+  margin: 0 10px;
+  height: 25px;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  transition: all .45s ease;
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
+}
+
+#menu-icon:hover{
+  color: var(--second-text-color);
+}
