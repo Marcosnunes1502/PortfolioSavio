@@ -21,10 +21,10 @@
   <header>
       <ul class="navlist">
         <li class="active"><a href="#home" class="active">Início</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contato</a></li>
+        <li><a href="#about" name="nav">Sobre</a></li>
+        <li><a href="#skills" name="nav">Habilidades</a></li>
+        <li><a href="#projects" name="nav">Projetos</a></li>
+        <li><a href="#contact" name="nav">Contato</a></li>
       </ul>
   
       <div>
@@ -82,44 +82,64 @@
             nós! Eu quero poder resolver problemas, transformar vidas, transformar idéias, facilitar o 
             trabalho de alguém e "dar mais TEMPO" para as pessoas através da programação.
         </p>
+        <a href="https://www.linkedin.com/in/fernando-alves-rufino" target="_blank" class="btn">Mais sobre</a>
       </div>
     </section>
     
     <!-- skills section -->
     <section class="skills" id="skills">
-      <div class="main-text">
-        <p>What I am Expert In</p>
-        <h2><span>My</span> Services</h2>
-      </div>
-  
+
       <div class="services-content">
-        <div class="box">
-          <div class="s-icons">
-            <i class='bx bx-mobile-alt' ></i>
+        <div class="titulo-tech">
+          <h3><span>TECNOLOGIAS</span></h3>
+          <div class="tech">
+            <div class="box">
+              <h3>BACK-END</h3>
+              <h2><img src="./img/node-js.svg" alt="Logo node"> Node.js</h2>
+              <h2><img src="./img/python.svg" alt="Logo python"> Python</h2>
+              <h2><img src="./img/django.svg" alt="Logo django"> Django</h2>
+            </div>
+      
+            <div class="box">
+              <h3>FRONT-END</h3>
+              <h2><img src="./img/html.svg" alt="Logo html">HTML</h2>
+              <h2><img src="./img/css.svg" alt="Logo css">CSS</h2>
+              <h2><img src="./img/javascript.svg" alt="Logo javascript">JavaScript</h2>
+              <h2><img src="./img/react-js.svg" alt="Logo react.js">React.js</h2>
+              <h2><img src="./img/bulma.svg" alt="Logo bulma">Bulma</h2>
+              <h2><img src="./img/bootstrap.svg" alt="Logo bootstrap">Bootstrap</h2>
+            </div>
+      
+            <div class="box">
+              <h3>MOBILE</h3>
+              <h2><img src="./img/react-native.svg" alt="Logo reacte native">React Native</h2>
+            </div>
           </div>
-          <h3>Web Design</h3>
-          <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
-          <a href="#" class="read">Read More</a>
-        </div>
-  
-        <div class="box">
-          <div class="s-icons">
-            <i class='bx bx-code-alt' ></i>
+          <div class="more-skills">
+            <div>
+              <div class="skils-softskils">
+                <h3><span>HABILIDADES</span></h3>
+                <p>Foco - Trabalho em equipe - 
+                  Organização - Proatividade</p>
+              </div>
+              <div class="skils-softskils">
+                <h3><span>SOFTSKILS</span></h3>
+                <p>Oratória - Comunicação - Ensinar</p>
+              </div>
+
+            </div>
+            <div class="premios">
+              <h3><span>PREMIAÇÕES</span></h3>
+              <img src="./img/premiações.png" alt="premiacoes">
+            </div>
+
           </div>
-          <h3>Web Development</h3>
-          <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
-          <a href="#" class="read">Read More</a>
         </div>
-  
-        <div class="box">
-          <div class="s-icons">
-            <i class='bx bx-edit-alt' ></i>
-          </div>
-          <h3>Creative Design</h3>
-          <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
-          <a href="#" class="read">Read More</a>
+
+        <div class="time-line">
+          <h3><span>LINHA DO TEMPO</span></h3>
+          <img src="./img/linha-do-tempo.png" alt="linha do tempo">
         </div>
-  
       </div>
     </section>
     
@@ -186,6 +206,46 @@
           
       </div>
     </section>
+
+    <!----contact section --->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+      <div class="main-text">
+        <h2>Envie sua <span>Mensagem</span></h2>
+      </div>
+			<div class="list">
+				<li><a href="devfernandorufino@gmail.com" target="_blank">devfernandorufino@gmail.com</a></li>
+			</div>
+
+			<div class="contact-icons">
+        <a href="https://github.com/fernandoalvesrufino"><i class='bx bxl-github' ></i></a>
+				<a href="https://www.linkedin.com/in/fernando-alves-rufino"><i class='bx bxl-linkedin' ></i></a>
+				<a href="https://www.instagram.com/_fernandoalvs/"><i class='bx bxl-instagram-alt' ></i></a>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<form action="">
+				<input type="name" placeholder="Digite seu nome" required>
+				<input type="email" placeholder="Digite seu melhor e-mail" required>
+				<textarea name="" id="" cols="35" rows="10" placeholder="Como eu posso te ajudar?" required></textarea>
+				<br>
+        <input type="submit" value="Enviar" class="submit" required>
+			</form>
+		</div>
+	</section>
+
+	<!----end section --->
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2022 by Fernando Rufino <img src="./img/bussola.svg" alt=""> All Rights Reserved.</p>
+		</div>
+
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
+	</section>
+
 
   <!--- link-script --->
   <script src="script.js"></script>
