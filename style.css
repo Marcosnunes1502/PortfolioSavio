@@ -213,6 +213,12 @@ section {
   width: 35px;
   height: 35px;
   margin: 0 10px;
+  transition: all .45s ease;
+
+}
+#logo-js:hover, #logo-python:hover{
+	transform: translateY(-8px);
+	cursor: pointer;
 }
 
 .about {
