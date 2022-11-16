@@ -490,6 +490,10 @@ section {
   display: flex;
   gap: 10px;
 }
+.layer .site-github i:hover{
+  color: white;
+  background: #FF4D00;
+}
 .layer i{
 	color: var(--main-color);
 	margin-top: 20px;
