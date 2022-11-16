@@ -221,11 +221,13 @@
 		</div>
 
 		<div class="contact-form">
-			<form action="">
-				<input type="name" placeholder="Digite seu nome" required>
-				<input type="email" placeholder="Digite seu melhor e-mail" required>
-				<textarea name="" id="" cols="35" rows="10" placeholder="Como eu posso te ajudar?" required></textarea>
-				<br>
+			<form action="https://formsubmit.co/devfernandorufino@gmail.com" method="POST">
+				<input type="text" name="name" placeholder="Digite seu nome" required>
+				<input type="email" name="email" placeholder="Digite seu melhor e-mail" required>
+				<input type="hidden" name="_captcha" value="false">
+				<textarea type="text" name="text" cols="35" rows="10" placeholder="Como eu posso te ajudar?" required></textarea>
+				<input type="hidden" name="_next" value="https://silver-shortbread-4377d9.netlify.app/#contact">
+        <br>
         <input type="submit" value="Enviar" class="submit" required>
 			</form>
 		</div>
