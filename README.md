@@ -39,7 +39,7 @@ Desenvolvido meu primeiro portfólio, onde exercitei e treinei alguns conceitos 
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/LOmPDxQYg0uubbhVuhCP0v/Portf%C3%B3lio---FR?node-id=0%3A1&t=PLHL0MPq0PVASO2u-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/LOmPDxQYg0uubbhVuhCP0v/Portf%C3%B3lio---FR---README?t=J5d0KF5hSEXZlZbK-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
