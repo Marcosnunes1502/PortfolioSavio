@@ -455,7 +455,7 @@ section {
 
 .portfolio-content {
   display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   align-items: center;
   gap: 10px;
   margin-top: 50px;
