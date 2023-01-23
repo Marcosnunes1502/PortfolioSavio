@@ -37,6 +37,9 @@ Desenvolvido meu primeiro portfólio, onde exercitei e treinei alguns conceitos 
 - é possível visualizar meus projetos (realizado deploy) e o código no GitHub
 - o formulário de e-mail está funcional
 
+- [Acesse o projeto finalizado, online](https://fernandoalvesrufino.github.io/meu-portfolio/)
+
+
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/LOmPDxQYg0uubbhVuhCP0v/Portf%C3%B3lio---FR---README?t=J5d0KF5hSEXZlZbK-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
