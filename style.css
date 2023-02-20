@@ -41,7 +41,7 @@ nav {
 
   background: var(--bg-color);
 
-  padding: 1.5rem 10rem;
+  padding: 1rem 10rem;
   /* border-bottom: 1px solid transparent; */
 
   opacity: 0.8;
@@ -120,114 +120,123 @@ figure {
 }
 
 section {
-  padding: 15rem 10rem 10rem;
+  padding: 10rem 10rem 10rem;
 }
 
 .home {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)), url("./img/background-inicio-2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/background-inicio-2.png");
   background-position: center;
   background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+  
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.home-text{
-  padding-top: 10%;
+
+.home-presentation {
+  padding-top: 10rem;
 }
 
-.home-text #nome{
-  font-size: 80px;
-  font-weight: 900;
+.home-presentation p {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding-left: 2px;
+}
+
+.home-presentation #name{
+  font-weight: 800;
+  font-size: 8.3rem;
+  line-height: 10rem;
   color: var(--text-color);
   letter-spacing: -2px;
   line-height: 0.8;
-  padding-left: 5px;
 }
 
-.home-text #sobre-nome{
+.home-presentation #last-name{
+  font-weight: 300;
+  font-size: 7.6rem;
   line-height: 0.8;
-  font-size: var(--big-font);
   font-weight: 300;
   color: var(--text-color);
   letter-spacing: -2px;
-  padding-left: 3px;
-  margin: 0 0 10px;
+  padding-bottom: 1.5rem;
+
 }
 
-.home-text h3{
-  font-size: 25px;
-  font-weight: bold;
+.home-presentation h3 p {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  display: inline;
+}
+
+.home-presentation h3{
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+
   color: var(--second-text-color);
   letter-spacing: 1.5px;
-  margin: 0 0 8px;
-  padding-left: 8px;
-  padding-top: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 8rem;
 }
 
-.home-text h3 span span{
+.home-presentation h3 span strong{
   color: var(--text-color);
-  font-size: 25px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+
 }
 
-.home-text h3 span{
+.home-presentation h3 span{
   letter-spacing: 1.5px;
   color: var(--text-color);
-  font-size: 20px;
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 32px;
+
 }
 
 .button {
+  max-width: 44rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 170px;
-  padding-inline: 15px;
+  gap: 2rem;
 }
 
-.btn1, .btn2{
-  display: inline-block;
-  font-size: 20px;
-  padding: 5px 38px;
-  margin: auto;
-  border: 2px solid rgb(161, 157, 157);
-  border-radius: 20px;
-  color: rgb(161, 157, 157);
-  font-weight: bold;
+.project-button, .contact-button {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+  padding: 1rem 5rem;
+
+  border: 2px solid var(--text-color);
+  border-radius: 3rem;
+  color: var(--text-color);
   letter-spacing: 1px;
   transition: all .45s ease;
 }
 
-.btn1:hover, .btn2:hover{
+.project-button:hover, .contact-button:hover {
   transform: scale(0.9);
   color: var(--second-text-color);
   border: 2px solid var(--second-text-color);
 }
 
-#logo-js, #logo-python {
-  width: 35px;
-  height: 35px;
-  margin: 0 10px;
-  transition: all .45s ease;
-
-}
-#logo-js:hover, #logo-python:hover{
-	transform: translateY(-8px);
-	cursor: pointer;
-}
-
+/* ---------------- About ----------------------- */
 .about {
   display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));  align-items: center;
   gap: 50px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.850),
-  rgba(0, 0, 0, 0.850)), url(./img/background-about.png);
-  background-position: center;
-  background-size: cover;
 }
 
 .about-img{
