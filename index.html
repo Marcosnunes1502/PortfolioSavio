@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Fernando Rufino</title>
 
   <!--- link-css --->
@@ -11,14 +15,12 @@
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   
   <!--- link-fonts --->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   
 </head>
 <body>
   <!-- header design -->
-  <header>
+  <nav>
       <ul class="navlist">
         <li class="active" name="nav-li"><a href="#home" class="active" name="nav-a">Início</a></li>
         <li name="nav-li"><a href="#about" name="nav-a">Sobre</a></li>
@@ -29,7 +31,7 @@
   
       <div>
         <ul class="social-network">
-          <li><a href="https://www.linkedin.com/in/fernando-alves-rufino" target="_blank">
+          <li><a href="https://www.linkedin.com/in/fernandorufino" target="_blank">
             <figure id="fig1"></figure>
           </a></li>
           <li><a href="https://github.com/fernandoalvesrufino" target="_blank">
@@ -40,23 +42,21 @@
       
       <div class="bx bx-menu" id="menu-icon"></div>
       
-    </header>
+    </nav>
     
     <!-- home section -->
     <section id="home" class="home">
-      <div class="home-text">
-        <h1 id="nome">FERNANDO</h1>
-        <h1 id="sobre-nome">RUFINO</h1>
-        <h3>Desenvolvedor Web <span><span>|</span> Full Stack</span></h3>
+      <div class="home-presentation">
+        <p>meu nome é</p>
+        <h1 id="name">FERNANDO</h1>
+        <h1 id="last-name">RUFINO</h1>
+        <h3><span>sou</span> Desenvolvedor Web <span><span>|</span> Full Stack</span></h3>
         <div class="button">
-          <a href="#projects" class="btn1">Projetos</a>
-          <a href="#contact" class="btn2">Contato</a>
+          <a href="#projects" class="project-button">Projetos</a>
+          <a href="#contact" class="contact-button">Contato</a>
         </div>
 
-        <div class="stack">
-          <img src="./img/logo-js.svg" alt="javascript" id="logo-js">
-          <img src="./img/logo-python.svg" alt="python" id="logo-python">
-        </div>
+        
       </div>
     </section>
 
