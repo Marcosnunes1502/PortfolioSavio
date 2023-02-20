@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
   font-family: 'Lato', sans-serif;
   list-style: none;
   text-decoration: none;
@@ -9,58 +10,56 @@
 }
 
 :root {
-  --bg-color: #2a2a2a;
-  --second-bg-color: #202020;
+  font-size: 62.5%;
+
+  --bg-color: #000000;
+  --second-bg-color: #C94C16;
+  
   --text-color: #ffffff;
   --second-text-color: #FF4D00;
-  --main-color: #ff4d05;
-  --big-font: 5rem;
-  --h2-font: 2.8rem;
-  --p-font:1.1rem;
+
+  --first-font: 'Lato', sans-serif;
+  --second-font: 'Inter', sans-serif;
 }
 
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  font-family: var(--first-font);
 }
 
-header{
+nav {
   position: fixed;
   width: 100%;
   top: 0;
-  right: 0;
-  z-index: 1000;
+  left: 0;
+  z-index: 10;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: black;
-  padding: 0 3%;
-  border-bottom: 1px solid transparent;
-  transition: all .45s ease;
-  opacity: 0.8;
-}
 
-header.sticky{
-  background: #1b1b1b;
-  border-bottom: 1px solid #ffffff1a;
-  padding: 0px 3%;
-  
+  background: var(--bg-color);
+
+  padding: 1.5rem 10rem;
+  /* border-bottom: 1px solid transparent; */
+
+  opacity: 0.8;
+  transition: all .45s ease;
 }
 
 .navlist{
   display: flex;
-}
-
-.navlist li{
-  border-bottom: 2px solid transparent;
-  padding: 10px;
+  gap: 4rem;
 }
 
 .navlist a{
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
   color: var(--text-color);
-  padding: 10px 20px;
-  font-size: 15px;
-  font-weight: 500;
+
   transition: all .45s ease;
 }
 
@@ -70,49 +69,49 @@ header.sticky{
 
 .navlist a.active {
   color: var(--second-text-color);
-  border-bottom: 2px solid var(--second-text-color);
+  font-weight: bolder;;
 
 }
 
 .social-network{
   display: flex;
+  gap: 2rem;
 }
 
 figure {
-  margin: 0 10px;
-  height: 25px;
-  width: 25px;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 #fig1 {
   background-image: url("./img/logo-linkedin-white.svg");  
-  background-size: 25px;
+  background-size: 3.5rem;
   transition: all .45s ease;
 }
 
 #fig1:hover {
   background-image: url("./img/logo-linkedin-orange.svg");  
-  background-size: 25px;
+  background-size: 3.5rem;
 }
 
 #fig2 {
   background-image: url("./img/logo-github-white.svg");  
-  background-size: 25px;
+  background-size: 3.5rem;
   transition: all .45s ease;
 }
 
 #fig2:hover {
   background-image: url("./img/logo-github-orange.svg");  
-  background-size: 25px;
+  background-size: 3.5rem;
 }
 
 #menu-icon {
-  font-size: 35px;
+  font-size: 5rem;
   color: var(--text-color);
   transition: all .45s ease;
-  z-index: 10001;
+  z-index: 11;
   cursor: pointer;
-  margin-left: 25px;
+  margin-left: 2.5rem;
   display: none;
 }
 
@@ -121,7 +120,7 @@ figure {
 }
 
 section {
-  padding: 70px 8% 120px;
+  padding: 15rem 10rem 10rem;
 }
 
 .home {
