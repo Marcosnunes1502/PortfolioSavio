@@ -124,7 +124,7 @@ section {
 }
 
 .home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/background-inicio-2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/background-inicio-2.png");
   background-position: center;
   background-size: cover;
 
@@ -235,29 +235,31 @@ section {
 
 /* ---------------- About ----------------------- */
 .about {
-  display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, auto));  align-items: center;
-  gap: 50px;
+  position: relative;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 100vh;
 }
 
-.about-img{
-  padding-left: 10%;
+.about-img {
   transition: all .45s ease;
 }
 
 .about-img img {
-  max-width: 400px;
-  height: auto;
-  width: 100%;
+  max-width: 45rem;
+  border-radius: 8px 0px;
 }
 .about-img:hover{
 	transform: translateY(-8px);
 	cursor: pointer;
 }
 .about-text {
-  padding: 35px;
-  background-color: #00000088;
-  border-radius: 8px;
+  max-width: 55rem;
+  background-color: var(--bg-color);
   transition: all .45s ease;
 
 }
@@ -266,8 +268,12 @@ section {
   font-size: var(--h2-font);
   line-height: 1;
   font-weight: normal;
-  padding-bottom: 40px;
+  padding-bottom: 3rem;
   color: var(--second-text-color);
+
+  font-weight: 400;
+  font-size: 5.5rem;
+  line-height: 6.6rem;
 }
 
 .about-text h2 span{
@@ -277,50 +283,54 @@ section {
 }
 
 .about-text p {
-  color: rgb(209, 208, 208);
+  color: var(--text-color);
   font-size: var(--p-font);
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   word-spacing: 1px;
   text-align: justify;
+
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
 }
 
-.btn, .btn-cv{
-  margin-top: 30px;
-	display: inline-block;
-	padding: 12px 28px;
-	background: var(--main-color);
-	border-radius: 8px;
-	color: var(--text-color);
-	font-size: 1rem;
-	letter-spacing: 1px;
-	font-weight: 600;
-	transition: all .45s ease;
-  margin-right:1rem;
-  border: 1px solid var(--main-color);
-}
-.btn-cv{
-  background: transparent;
-  border: 1px solid var(--main-color);
-  color: var(--main-color);
-}
-.botoes{
+.button-cv {
+  margin: 3rem auto 0;
+	background: var(--bg-color);
+  transition: all .45s ease;
   display: flex;
 }
 
+.btn-cv {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  background: transparent;
+  border: 1px solid var(--second-bg-color);
+  color: var(--second-text-color);
+  padding: 1rem 2.5rem;
+  border-radius: 0.8rem;
+  transition: all .45s ease;
+}
 
-.btn-cv:hover{
-  background: var(--main-color);
-  border: 1px solid var(--text-color);
-  color: var(--text-color);
+.button-cv:hover {
   transform: scale(0.9);
 }
 
-.btn:hover{
-	transform: scale(0.9);
-  background: white;
-  color: #FF4D00;
+.btn-cv:hover {
+  background: var(--second-bg-color);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
 }
 
+img.balls {
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem;
+}
+
+
+/* ------------ skilss ------------------ */
 .skills{
   background-image: linear-gradient(rgba(0, 0, 0, 0.850),
   rgba(0, 0, 0, 0.850)), url(./img/timeline-background.png);
