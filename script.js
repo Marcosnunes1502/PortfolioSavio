@@ -27,3 +27,8 @@ function activeLink(){
 list.forEach((item) =>
 item.addEventListener('click', activeLink))
 
+function toggleMode(){
+  const html = document.documentElement
+
+  html.classList.toggle('light')
+}

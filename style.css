@@ -21,7 +21,44 @@
 
   --first-font: 'Lato', sans-serif;
   --second-font: 'Inter', sans-serif;
+
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./img/moon-star.svg);
+
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(3, 0, 0, 0.308);
+
+  --bg-image-home: url("./img/bg-home-dark-3.jpg");
+  --position-bg-home: 150px -100px;
+  --logo-github: url("./img/logo-github-white.svg");
+  --logo-github-hover: url("./img/logo-github-orange.svg");
+  --logo-linkedin: url("./img/logo-linkedin-white.svg");
+  --logo-linkedin-hover: url("./img/logo-linkedin-orange.svg");
 }
+
+.light {
+  --bg-color: #ffffff;
+  --second-bg-color: #C94C16;
+  
+  --text-color: #000000;
+  --second-text-color: #FF4D00;
+  --card-bg-color: hsla(18, 80%, 44%, 0.5);
+
+  --highlight-color: rgba(0, 0, 0, 0.25);
+  --switch-bg-url: url(./img/sun.svg);
+  
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --surface-color-hover: rgba(3, 0, 0, 0.308);
+
+  --bg-image-home: url("./img/bg-home-light-3.avif");
+  --position-bg-home: -500px 0;
+  --logo-github: url("./img/logo-github-black.svg");
+  --logo-github-hover: url("./img/logo-github-orange.svg");
+  --logo-linkedin: url("./img/logo-linkedin-black.svg");
+  --logo-linkedin-hover: url("./img/logo-linkedin-orange.svg");
+  }
 
 body {
   background: var(--bg-color);
@@ -41,6 +78,8 @@ nav {
   justify-content: space-between;
 
   background: var(--bg-color);
+  border-bottom: 1px solid black;
+  background-size: cover;
 
   padding: 1rem 10rem;
   /* border-bottom: 1px solid transparent; */
@@ -48,6 +87,56 @@ nav {
   opacity: 0.8;
   transition: all .45s ease;
 }
+
+/* switch */
+#switch {
+  position: relative;
+  width: 4rem;
+  margin: 0.5rem 5rem;
+}
+
+#switch button {
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+  
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 0;
+  border-radius: 50%;
+  background-image: var(--switch-bg-url);
+  background-repeat: no-repeat;
+  background-position: center ;
+  transition: all 0.3s;
+  
+  animation: slide-back 0.4s;
+  border: 1px var(--highlight-color) solid;
+}
+
+#switch button:hover {
+  outline: 0.5rem solid var(--highlight-color);
+}
+
+.light #switch button {
+  animation: slide-in 0.4s forwards;
+}
+
+#switch span {
+  display: block;
+  width: 4rem;
+  height: 1.7rem;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 624.94rem;
+}
+
+/* ------------------- nav ------------------- */
 
 .navlist{
   display: flex;
@@ -70,7 +159,7 @@ nav {
 
 .navlist a.active {
   color: var(--second-text-color);
-  font-weight: bolder;;
+  font-weight: bolder;
 
 }
 
@@ -85,25 +174,27 @@ figure {
 }
 
 #fig1 {
-  background-image: url("./img/logo-linkedin-white.svg");  
+  background-image: var(--logo-linkedin);  
   background-size: 3rem;
   transition: all .45s ease;
 }
 
 #fig1:hover {
-  background-image: url("./img/logo-linkedin-orange.svg");  
+  background-image: var(--logo-linkedin-hover);  
   background-size: 3rem;
+  transform: scale(0.9);
 }
 
 #fig2 {
-  background-image: url("./img/logo-github-white.svg");  
+  background-image: var(--logo-github);  
   background-size: 3rem;
   transition: all .45s ease;
 }
 
 #fig2:hover {
-  background-image: url("./img/logo-github-orange.svg");  
+  background-image: var(--logo-github-hover);  
   background-size: 3rem;
+  transform: scale(0.9);
 }
 
 #menu-icon {
@@ -125,9 +216,10 @@ section {
 }
 
 .home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/background-inicio-2.png");
-  background-position: center;
+  background-image: var(--bg-image-home);
+  background-position: var(--position-bg-home);
   background-size: cover;
+  background-repeat: no-repeat;
 
   width: 100%;
   height: 100vh;
@@ -645,13 +737,32 @@ form textarea{
   text-align: initial;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
 }
 .last-text img{
   width: 25px;
   text-align: center;
 }
 
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  } to {
+    left: 50%;
+  }
+}
 
+@keyframes slide-back {
+  from {
+    left: 50%;
+  } to {
+    left: 0;
+  }
+}
+
+
+/* media queries */
 @media (max-width: 1480px){
 	header{
 		padding: 0px 3%;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +40,16 @@
         <li name="nav-li"><a href="#projects" name="nav-a">Projetos</a></li>
         <li name="nav-li"><a href="#contact" name="nav-a">Contato</a></li>
       </ul>
-  
+
+      
       <div>
         <ul class="social-network">
+          <li>
+            <div id="switch" onclick="toggleMode()">
+              <button></button>
+              <span></span>
+            </div>
+          </li>
           <li><a href="https://www.linkedin.com/in/fernandorufino" target="_blank">
             <figure id="fig1"></figure>
           </a></li>
@@ -333,6 +340,9 @@
 
 
   <!--- link-script --->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>
