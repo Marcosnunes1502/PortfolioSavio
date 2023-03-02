@@ -522,8 +522,10 @@ img.balls {
   rgba(0, 0, 0, 0.850)), url(./img/world-comunication.jpg);
   background-position: center;
   background-size: cover;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 	align-items: center;
 	gap: 2.5rem;
 }
@@ -534,45 +536,16 @@ img.balls {
   text-align: initial;
   font-size: 40px;
 }
+
+.contact-text h2 span {
+  color: var(--second-text-color);
+}
+
 .contact-text p{
 	color: var(--second-color);
 	font-size: var(--p-font);
 	line-height: 1.8;
 	margin-bottom: 30px;
-}
-.list{
-  margin-top: 20px;
-	margin-bottom: 30px;
-}
-.list li{
-	margin-bottom: 12px;
-}
-.list li a{
-	display: block;
-	color: var(--second-color);
-	font-size: 18px;
-	transition: all .45s ease;
-}
-.list li a:hover{
-	color: var(--text-color);
-	transform: translateX(5px);
-}
-.contact-icons i{
-	height: 45px;
-	width: 45px;
-	background: var(--main-color);
-	color: var(--text-color);
-	font-size: 22px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 8px;
-	margin-right: 15px;
-	transition: all .45s ease;
-}
-.contact-icons i:hover{
-	background: var(--text-color);
-	color: var(--main-color);
 }
 
 .contact-form form{
@@ -594,29 +567,62 @@ form textarea{
 .contact-form textarea{
 	resize: none;
 	height: 240px;
+  margin-bottom: 4rem;
 }
 .contact-form .submit{
 	display: inline-block;
-	font-size: 16px;
-	background: var(--main-color);
+	background: var(--second-bg-color);
 	color: var(--text-color);
 	width: 160px;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1rem;
+  margin-bottom: 6rem;
+  
+  
 	transition: all .45s ease;
 }
 .contact-form .submit:hover{
   background: var(--text-color);
 	color: var(--second-text-color);
-
+  cursor: pointer;
+  
 }
 
+.contact-icons i{
+	height: 45px;
+	width: 45px;
+	background: var(--main-color);
+	color: var(--text-color);
+	font-size: 3rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	margin-right: 15px;
+	transition: all .45s ease;
+}
+.contact-icons i:hover{
+	background: var(--text-color);
+	color: var(--second-text-color);
+}
+
+
 .end{
+  position: relative;
 	padding: 10px 3%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 2rem;
 	background: rgb(19, 19, 19);
+}
+
+.top {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
 }
 
 .top i{
@@ -624,14 +630,14 @@ form textarea{
 	border-radius: 8px;
 	font-size: 15px;
 	color: var(--text-color);
-	background: var(--main-color);
+	background: var(--second-text-color);
   transition: all .45s ease;
 }
 
 .top i:hover{
   transform: scale(1.1);
   background: var(--text-color);
-	color: var(--main-color);
+	color: var(--second-text-color);
 }
 
 .last-text p{
