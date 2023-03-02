@@ -418,15 +418,27 @@ img.balls {
   background-position: center;
   background-color: black;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-text h2 {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 6.6rem;
 }
 
 .portfolio-content {
   display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   align-items: center;
-  gap: 10px;
-  margin-top: 50px;
-  padding: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 0 15rem 10rem;
 }
 
 .row {
@@ -434,6 +446,7 @@ img.balls {
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  margin: 0 0.5rem;
 }
 
 .row img{
@@ -468,10 +481,10 @@ img.balls {
 }
 .layer p{
 	color: var(--second-color);
-	font-size: 1rem;
-	line-height: 1.8;
+	font-size: 1.2rem;
+	line-height: 1.5;
 }
-.layer .site-github{
+.layer .site-github {
   display: flex;
   gap: 10px;
 }
@@ -480,7 +493,7 @@ img.balls {
   background: #FF4D00;
 }
 .layer i{
-	color: var(--main-color);
+  color: var(--second-text-color);
 	margin-top: 20px;
 	font-size: 30px;
 	background: var(--text-color);
@@ -490,6 +503,7 @@ img.balls {
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
+  transition: all 0.4s ease;
 }
 
 .row:hover img{
@@ -500,6 +514,8 @@ img.balls {
 .row:hover .layer{
 	height: 100%;
 }
+
+/* --------------- contact ----------------------- */
 
 .contact{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.850),
