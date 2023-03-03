@@ -61,7 +61,7 @@
   --surface-color-hover: rgba(3, 0, 0, 0.308);
 
   --bg-image-home: url("./img/bg-home-light-3.avif");
-  --position-bg-home: -65rem 0;
+  --position-bg-home: -70rem 0;
   --logo-github: url("./img/logo-github-black.svg");
   --logo-github-hover: url("./img/logo-github-orange.svg");
   --logo-linkedin: url("./img/logo-linkedin-black.svg");
@@ -244,6 +244,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  height: 100vh;
 }
 
 .home-presentation {
@@ -734,7 +735,7 @@ form textarea{
 	padding: 10px;
 	border-radius: 8px;
 	font-size: 15px;
-	color: var(--text-color);
+	color: white;
 	background: var(--second-text-color);
   transition: all .45s ease;
 }
@@ -776,7 +777,41 @@ form textarea{
 
 
 /* media queries */
+@media screen and (max-width: 2400px) {
+  .light {
+    --position-bg-home: -80rem 0;
+  }
+}
+
+@media screen and (max-width: 2300px) {
+  .light {
+    --position-bg-home: -100rem 0;
+  }
+}
+
+@media screen and (max-width: 2090px) {
+  .light {
+    --position-bg-home: -120rem 0;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .light {
+    --position-bg-home: -140rem 0;
+  }
+}
+
+@media screen and (max-width: 1690px) {
+  .light {
+    --position-bg-home: -160rem 0;
+  }
+}
+
 @media (max-width: 1480px){
+  .light {
+    --position-bg-home: -170rem 0;
+  }
+
 	header{
 		padding: 0px 3%;
 		transition: .1s;
@@ -796,13 +831,23 @@ form textarea{
   }
 }
 
-@media (max-width: 1100px){
+@media screen and (max-width: 1400px) {
+  .light {
+    --position-bg-home: -180rem 0;
+  }
+}
+
+@media screen and (max-width: 1100px){
 	:root{
 		--big-font: 4rem;
 	  --h2-font: 2.5rem;
 	  --p-font: 1rem;
 	  transition: .1s;
 	}
+
+  .light {
+    --bg-image-home: none;
+  }
 	.home-text h3{
 		font-size: 2.5rem;
 	}
