@@ -80,7 +80,10 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   font-family: var(--first-font);
+  
 }
+
+
   
 /* ------------------- nav ------------------- */
 
@@ -229,14 +232,14 @@ figure {
 }
 
 section {
-  padding: 10rem 10rem 10rem;
+  padding: 5rem 10rem 5rem;
 }
 
 .home {
-  background-image: var(--bg-image-home);
-  background-position: var(--position-bg-home);
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: var(--bg-image-home); */
+  /* background-position: var(--position-bg-home); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
 
   width: 100%;
   height: 100vh;
@@ -247,8 +250,15 @@ section {
   height: 100vh;
 }
 
+.home .home-mac {
+  width: 50%;
+  position: absolute;
+  z-index: -2;
+  right: 5rem;
+}
+
 .home-presentation {
-  min-width: 55rem;
+  min-width: 45rem;
 }
 
 .home-presentation p {
@@ -354,7 +364,7 @@ section {
 
   width: 100%;
   height: 100vh;
-  margin: 15rem 0;
+  margin: 0;
 }
 
 .about-img {
@@ -777,41 +787,8 @@ form textarea{
 
 
 /* media queries */
-@media screen and (max-width: 2400px) {
-  .light {
-    --position-bg-home: -80rem 0;
-  }
-}
-
-@media screen and (max-width: 2300px) {
-  .light {
-    --position-bg-home: -100rem 0;
-  }
-}
-
-@media screen and (max-width: 2090px) {
-  .light {
-    --position-bg-home: -120rem 0;
-  }
-}
-
-@media screen and (max-width: 1900px) {
-  .light {
-    --position-bg-home: -140rem 0;
-  }
-}
-
-@media screen and (max-width: 1690px) {
-  .light {
-    --position-bg-home: -160rem 0;
-  }
-}
 
 @media (max-width: 1480px){
-  .light {
-    --position-bg-home: -170rem 0;
-  }
-
 	header{
 		padding: 0px 3%;
 		transition: .1s;
@@ -831,9 +808,21 @@ form textarea{
   }
 }
 
-@media screen and (max-width: 1400px) {
-  .light {
-    --position-bg-home: -180rem 0;
+@media screen and (max-width: 1180px){
+  .home {
+    flex-direction: column;
+  }
+
+  /* .home .home-presentation {
+    justify-content: flex-start;
+    width: 100%;
+  } */
+  
+  .home .home-mac {
+    width: 100%;
+    position: static;
+    z-index: 1;
+    right: 5rem;
   }
 }
 
@@ -845,9 +834,6 @@ form textarea{
 	  transition: .1s;
 	}
 
-  .light {
-    --bg-image-home: none;
-  }
 	.home-text h3{
 		font-size: 2.5rem;
 	}
@@ -856,9 +842,31 @@ form textarea{
 	}
 }
 
+@media screen and (max-width: 1080px) {
+  .about-img img{
+    max-width: 35rem;
+  }
+}
+
 @media (max-width: 920px){
-	.about{
-		grid-template-columns: 1fr;
+	.button {
+    max-width: 44rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    margin: 0 auto;
+  }
+
+  .button .project-button,
+  .button .contact-button {
+    margin: 0;
+    padding-inline: 7rem;
+  }
+  
+  .about{
+		display: flex;
+    flex-direction: column;
 	}
 	.about-img{
 		text-align: center;
@@ -867,8 +875,13 @@ form textarea{
 	.about-img img{
 		width: 100%;
 		height: auto;
-		max-width: 100%;
+		max-width: 80%;
 	}
+
+  img.balls {
+    display: none;
+  }
+
   .contact{
 		grid-template-columns: 1fr;
 	}
@@ -920,10 +933,15 @@ form textarea{
   }
 }
 
-@media (max-width: 840px){
+@media screen and (max-width: 840px){
 	#menu-icon{
 		display: block;
 	}
+
+  #switch {
+    margin: 0.5rem 1rem;
+  }
+
 	.navlist{
 		position: absolute;
 		top: -1000px;
@@ -949,4 +967,85 @@ form textarea{
 	.navlist.open{
 		top: 100%;
 	}
+}
+
+@media screen and (max-width: 768px) {
+  .techs {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tools {
+    max-width: 65rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 612px) {
+  .home {
+ 
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+
+  .home-presentation {
+    min-width: 30rem;
+  }
+  
+  .home-presentation p {
+    font-size: 1.3rem;
+  }
+  
+  .home-presentation #name{
+    font-size: 5rem;
+    margin-bottom: 0.3rem;
+}
+  
+  .home-presentation #last-name{
+    font-size: 4rem;
+  }
+  
+  .home-presentation h3 p {
+    font-size: 1.1rem;
+  }
+  
+  .home-presentation h3{
+    font-size: 1.5rem;
+   }
+  
+  .home-presentation h3 span{
+    letter-spacing: 1.5px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 32px;
+  
+  }
+  
+  .button {
+    display: none;
+  }
+  
+  .techs {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .techs {
+    display: grid;
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
