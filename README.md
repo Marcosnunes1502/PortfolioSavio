@@ -33,11 +33,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Desenvolvido meu primeiro portfólio, onde exercitei e treinei alguns conceitos aprendidos com as tecnologias utilizadas. 
 
-- é possivel acessar minhas redes através dos links
-- é possível visualizar meus projetos (realizado deploy) e o código no GitHub
-- o formulário de e-mail está funcional
-
-- [Acesse o projeto finalizado, online](https://fernandoalvesrufino.github.io/meu-portfolio/)
+- [x] é possivel acessar minhas redes através dos links;
+- [x] é possível visualizar meus projetos (realizado deploy) e o código no GitHub;
+- [x] o formulário de e-mail está funcional;
+- [x] implementado seleção de dark e light mode para visualização da página.
+<br>
+- Acesse o projeto finalizado, [clicando aqui](https://fernandoalvesrufino.github.io/meu-portfolio/).
 
 
 ## 🔖 Layout
