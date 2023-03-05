@@ -1,3 +1,6 @@
+<p align="center"> 🚧 Em construção 🚧 </p>
+<br>
+
 <h1 align="center"> Portfólio - Fernando Rufino </h1>
 
 <p align="center">
