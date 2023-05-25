@@ -40,8 +40,8 @@ Desenvolvido meu primeiro portfólio, onde exercitei e treinei alguns conceitos 
 - [x] o formulário de e-mail está funcional;
 - [x] implementado seleção de dark e light mode para visualização da página.
 <br>
-- Acesse o projeto finalizado, [clicando aqui](https://fernandoalvesrufino.github.io/meu-portfolio/).
 
+- Acesse o projeto finalizado, [clicando aqui](https://fernandoalvesrufino.github.io/meu-portfolio/).
 
 ## 🔖 Layout
 
