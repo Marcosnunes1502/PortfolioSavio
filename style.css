@@ -475,6 +475,7 @@ img.balls {
   line-height: 6.6rem;
 }
 
+
 .techs {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -485,6 +486,7 @@ img.balls {
 }
 
 .tool h2 {
+  
   font-weight: 400;
   font-size: 3rem;
   line-height: 4.7rem;
@@ -492,6 +494,7 @@ img.balls {
 }
 
 .tools {
+ 
   max-width: 65rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
